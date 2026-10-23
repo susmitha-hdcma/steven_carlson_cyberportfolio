@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<!-- Offline archive of https://www.stevencarlson.com/printable_cv.html captured with Toolspea Website Clone on 2026-10-19T10:14:59.184Z. Server-dependent features such as forms, search and checkout only work on the live site. -->
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Steven Carlson - Printable CV</title>
+   <style>
+      /* Basic print styles */
+      :root { color-scheme: light; }
+
+      body {
+         font-family: Arial, sans-serif;
+         font-size: 14px;
+         line-height: 1.6;
+         margin: 0;
+         padding: 20px;
+         background: #fff;
+         color: #111;
+      }
+
+      .flex-wrap {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 6px;
+      }
+
+      .container {
+         width: 100%;
+         max-width: 800px;
+         margin: 0 auto;
+      }
+
+      h2 {
+         font-size: 24px;
+         font-weight: bold;
+         text-align: center;
+         margin-bottom: 0;
+      }
+
+      h3 {
+         font-size: 24px;
+         font-weight: bold;
+         text-align: center;
+         margin-top: 0;
+         margin-bottom: 0px;
+      }
+
+      .pill {
+         display: inline-block;
+         background-color: #e5e7eb;
+         color: #111827;
+         font-size: 12px;
+         padding: 4px 10px;
+         margin: 4px 6px 4px 0;
+         border-radius: 9999px;
+         font-weight: 500;
+         line-height: 1.4;
+         white-space: nowrap;
+      }
+
+      .pill-group {
+         display: flex;
+         flex-wrap: wrap;
+         margin-bottom: 12px;
+      }
+
+
+      p {
+         margin: 10px 0;
+      }
+
+      .section-title {
+         font-size: 18px;
+         font-weight: bold;
+         margin-top: 20px;
+         text-decoration: underline;
+      }
+
+      ul {
+         padding-left: 20px;
+      }
+
+      li {
+         margin-bottom: 8px;
+      }
+
+      @media print {
+         * {
+            background: none !important;
+            color: black !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+         }
+
+         a {
+            text-decoration: underline;
+         }
+
+         body {
+            margin: 0;
+            padding: 0;
+         }
+
+         .container {
+            padding: 0;
+         }
+
+         /* Pill-style fixes for print layout */
+         .pill-group {
+            display: block;
+            margin-bottom: 12px;
+         }
+
+         .pill {
+            display: inline-block;
+            background: #e5e7eb !important;
+            /* ensure light background still appears in print */
+            color: #111827 !important;
+            font-size: 12px;
+            padding: 4px 10px;
+            margin: 4px 6px 4px 0;
+            border-radius: 9999px;
+            font-weight: 500;
+            line-height: 1.4;
+            white-space: nowrap;
+            page-break-inside: avoid;
+            break-inside: avoid;
+         }
+      }
+   </style>
+   <script defer src="../assets/js/cdn.min.js" type="436d66e80330e10551c1a185-text/javascript"></script>
+</head>
+
+<body>
+   <div class="container" x-data="{ tech_skills, misc_skills, certifications_skills, details, jobsList, educationList }">
+      <!-- Header -->
+      <h2>Steven Carlson</h2>
+
+      <p style="text-align:center;">Cybersecurity Executive & AI Platform Builder | CISSP | M.S. Cybersecurity | Cloud Security | HIPAA Compliance</p>
+
+   <p style="text-align:center;">
+      Featured builds: <strong>CADMedic.AI</strong> (cadmedic.ai) & <strong>WaymarkHQ</strong> (waymarkhq.com)
+   </p>
+
+      <!-- Contact -->
+      <p class="section-title">Contact Info:</p>
+
+      <p>
+         <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b190e181e060e2b181f0e1d0e05080a190718040545080406">[email&#160;protected]</a><br>
+         https://www.linkedin.com/in/StevenMCarlson/
+      </p>
+
+
+      <!-- About Me -->
+      <p class="section-title">About Me:</p>
+      <p>
+         Executive cybersecurity and technology leader with hands-on experience as co-founder and acting CISO of a national SaaS platform, directing security, infrastructure, and enterprise risk strategy at scale. Founded, built, and sold three businesses, including a computer-vision security platform acquired by a larger technology firm. Currently designing and shipping two AI-native platforms end-to-end: CADMedic.AI, a HIPAA-aligned AI operations platform for EMS agencies, and WaymarkHQ, a security governance control plane for AI coding agents. Holds CISSP and a Master's in Cybersecurity, combining cloud security depth, regulatory compliance expertise, AI engineering, and frontline healthcare operations experience as a practicing paramedic. Positioned to lead healthcare and regulated-industry security programs where uptime, compliance, and human safety intersect.
+      </p>
+
+      <!-- Information -->
+      <p class="section-title">Information:</p>
+      <ul>
+         <template x-for="info in details" :key="info.label">
+            <li><strong x-text="info.label"></strong>: <span x-text="info.value"></span></li>
+         </template>
+      </ul>
+
+      <!-- Experience -->
+      <p class="section-title">Experience:</p>
+      <ul>
+         <template x-for="job in jobsList" :key="job.role">
+            <li>
+               <strong x-text="job.role"></strong> - <span x-text="job.company"></span>, <span x-text="job.location"></span> (<span x-text="job.period"></span>)<br />
+               <span x-html="job.description"></span>
+            </li>
+         </template>
+      </ul>
+
+      <!-- Education & Certifications -->
+      <p class="section-title">Education & Certifications:</p>
+      <ul>
+         <template x-for="edu in educationList" :key="edu.degree">
+            <li>
+               <strong x-text="edu.degree"></strong> - <span x-text="edu.university"></span>, <span x-text="edu.location"></span> (<span x-text="edu.period"></span>)<br />
+               <span x-text="edu.description"></span>
+            </li>
+         </template>
+      </ul>
+   </div>
+   
+         <!-- Certifications -->
+      <div class="container" x-data="{ tech_skills, misc_skills, certifications_skills, details, jobsList, educationList }">
+         <p class="section-title">Certifications:</p>
+         <template x-for="(items, category) in certifications_skills" :key="category">
+            <div class="mb-6">
+               <p class="font-semibold text-base text-gray-900 mb-2" x-text="category"></p>
+               <div class="flex-wrap">
+                  <template x-for="cert in items" :key="cert">
+                     <span class="pill" x-text="cert"></span>
+                  </template>
+               </div>
+            </div>
+         </template>
+      </div>
+
+   <!-- Tech Skills -->
+   <div class="container" x-data="{ tech_skills, misc_skills, certifications_skills, details, jobsList, educationList }">
+      <p class="section-title">Tech Skills:</p>
+      <template x-for="(skills, category) in tech_skills" :key="category">
+         <div class="mb-6">
+            <p class="font-semibold text-base text-gray-900 mb-2" x-text="category"></p>
+            <div class="flex-wrap">
+               <template x-for="skill in skills" :key="skill">
+                  <span class="pill" x-text="skill"></span>
+               </template>
+            </div>
+         </div>
+      </template>
+   </div>
+   <!-- Alpine.js data initialization -->
+   <script data-cfasync="false" src="../assets/js/email-decode.min.js"></script><script type="436d66e80330e10551c1a185-text/javascript">
+      document.addEventListener('alpine:init', () => {
+         Alpine.data('tech_skills', () => tech_skills);
+         Alpine.data('misc_skills', () => misc_skills);
+         Alpine.data('certifications_skills', () => certifications_skills);
+         Alpine.data('details', () => details);
+         Alpine.data('jobsList', () => jobsList);
+         Alpine.data('educationList', () => educationList);
+      });
+   </script>
+   <script src="../assets/js/data.js" type="436d66e80330e10551c1a185-text/javascript"></script>
+
+<script src="../assets/js/rocket-loader.min.js" data-cf-settings="436d66e80330e10551c1a185-|49" defer></script></body>
+
+</html>

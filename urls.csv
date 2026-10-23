@@ -1,0 +1,6 @@
+"Original URL","Final URL","HTTP status","Local path","Page title","Depth","Source","Download status"
+"https://www.stevencarlson.com/aaf.php","https://www.stevencarlson.com/aaf.php","200","aaf.php/index.html","Steven Carlson — Security Executive & AI Platform Builder | CISSP","0","seed","done"
+"https://www.stevencarlson.com/","https://www.stevencarlson.com/","200","index.html","Steven Carlson — Security Executive & AI Platform Builder | CISSP","1","/aaf.php","done"
+"https://www.stevencarlson.com/projects.html","https://www.stevencarlson.com/projects.html","200","projects/index.html","Case Studies — CADMedic.AI, WaymarkHQ &amp; Cyberbully Watch | Steven Carlson","1","/aaf.php","done"
+"https://www.stevencarlson.com/printable_cv.html","https://www.stevencarlson.com/printable_cv.html","200","printable_cv/index.html","Steven Carlson - Printable CV","1","/aaf.php","done"
+"https://www.stevencarlson.com/cdn-cgi/l/email-protection","https://www.stevencarlson.com/cdn-cgi/l/email-protection","404","","","2","/printable_cv.html","failed"
